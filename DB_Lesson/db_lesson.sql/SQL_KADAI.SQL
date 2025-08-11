@@ -12,7 +12,7 @@ ALTER TABLE people ADD department_id INT unsigned AFTER email;
 
 
 
--- Q3 --
+-- Q3 -- 1~3
 INSERT INTO departments (name)
 VALUES 
 ('営業'),
