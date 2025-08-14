@@ -12,7 +12,7 @@ ALTER TABLE people ADD department_id INT unsigned AFTER email;
 
 
 
--- Q3 --
+-- Q3 -- 
 INSERT INTO departments (name)
 VALUES 
 ('営業'),
@@ -59,13 +59,13 @@ UPDATE people SET department_id = 1 WHERE person_id = 6;
 
 
 -- Q5 --
-SELECT name, age FROM people where gender = 1 ORDER BY age DESC;
+SELECT name, age FROM people WHERE gender = 1 ORDER BY age DESC;
 
 
  
 -- Q6 --
 /* 下記のSQL文は、peopleというテーブルから、営業部署所属のname、email、ageを含むカラムを、作成された順番でレコードとして取得するクエリです。*/
-SELECT name, email, age FROM people where department_id = 1 ORDER BY created_at;
+SELECT name, email, age FROM people WHERE department_id = 1 ORDER BY created_at;
 
 
 
@@ -75,7 +75,7 @@ SELECT name FROM people WHERE  (age BETWEEN 20 AND 29 AND gender = 2) OR (age BE
 
 
 -- Q8 --
-SELECT name, age, department_id FROM people where department_id = 1 ORDER BY age;
+SELECT name, age, department_id FROM people WHERE department_id = 1 ORDER BY age;
 
 
 
